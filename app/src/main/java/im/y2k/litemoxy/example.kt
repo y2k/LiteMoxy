@@ -61,9 +61,7 @@ class LoginPresenter(private val service: LoginServices, private val router: Rou
 // Infrastructure
 
 class LoginServices {
-    suspend fun login(username: String, password: String) {
-        delay(5000)
-    }
+    suspend fun login(username: String, password: String) = delay(5000)
 }
 
 class Router {
